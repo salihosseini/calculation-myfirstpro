@@ -2,6 +2,7 @@
 #include<stdio.h>
 
 void add(float a,float b);
+void sub(float a,float b);
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
         break;
         
     case '-':
-        printf("-");
+        sub(a,c);
         break;
         
     case '*':
@@ -46,4 +47,10 @@ int main()
 void add(float a,float b)
 {
     printf("%.2f",a+b);
+}
+
+void sub(float a,float b)
+{
+    printf("%.2f",a-b);
+
 }
