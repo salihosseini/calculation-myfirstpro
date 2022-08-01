@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdio.h>
 
+void add(float a,float b);
 
 int main()
 {
@@ -14,7 +15,7 @@ int main()
     switch (b)
     {
     case '+':
-        printf("+");
+        add(a,c);
         break;
         
     case '-':
@@ -32,16 +33,17 @@ int main()
     case '%':
         printf("%%");
         break;
-    
-    
-    
-    
+
     default:
+
+        printf("your form of  entering is wrong ");
         break;
     }
-
-
-
-
     return 0;
+}
+
+
+void add(float a,float b)
+{
+    printf("%.2f",a+b);
 }
