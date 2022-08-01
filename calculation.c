@@ -32,10 +32,6 @@ int main()
     case '/':
         div(a,c);
         break;
-    
-    case '%':
-        printf("%%");
-        break;
 
     default:
 
