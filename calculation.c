@@ -4,6 +4,7 @@
 void add(float a,float b);
 void sub(float a,float b);
 void multi(float a,float b);
+void div(float a,float b);
 
 int main()
 {
@@ -29,7 +30,7 @@ int main()
         break;
         
     case '/':
-        printf("/");
+        div(a,c);
         break;
     
     case '%':
@@ -59,5 +60,11 @@ void sub(float a,float b)
 void multi(float a,float b)
 {
     printf("%.2f",a*b);
+
+}
+
+void div(float a,float b)
+{
+    printf("%.2f",a/b);
 
 }
